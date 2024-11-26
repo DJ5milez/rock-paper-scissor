@@ -14,13 +14,14 @@ closeBtns.forEach(btn => {
   });
 });
 
-
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.style.display = 'none';
   }
 });
 
+let userChoice = " " ;
+    if ()
 
 
             // comp makes choice
