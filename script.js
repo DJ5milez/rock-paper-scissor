@@ -1,3 +1,27 @@
+const modal = document.getElementById('myModal');
+const openModal = document.getElementById('openModal');
+const closeBtns = document.querySelectorAll('.close-btn');
+
+// Open modal
+openModal.addEventListener('click', () => {
+  modal.style.display = 'flex';
+});
+
+// Close modal 
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+});
+
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
 
             // comp makes choice
                 let randomNumber = Math.floor(Math.random()*3)+1;
@@ -27,9 +51,4 @@
                         return "Computer has chosen " + hand;
 
                 }
-            // User makes choice
-                function userChoice() {
-                    
-                }
-
                 console.log(compChoice());
