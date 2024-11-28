@@ -37,18 +37,18 @@ window.addEventListener('click', (e) => {
     console.log ("Scissors")
   }
   //if user select button => user chose X
-  function userChoice () {
-    if (document.getElementById("rockBtn").addEventListener("click", rock))
-      userChoice = "rock";
-    else if (document.getElementById("paperBtn").addEventListener("click", paper))
-      userChoice = "paper";
-    else if (document.getElementById("scissorsBtn").addEventListener("click", scissors))
-      userChoice = "Scissors";
+ // function userChoice () {
+   // if (document.getElementById("rockBtn").addEventListener("click", rock))
+     // userChoice = "rock";
+  //  else if (document.getElementById("paperBtn").addEventListener("click", paper))
+   //   userChoice = "paper";
+   // else if (document.getElementById("scissorsBtn").addEventListener("click", scissors))
+     // userChoice = "Scissors";
 
-    return "Player has chosen" + userChoice
-  }
+    //return "Player has chosen" + userChoice
+ //. }
 
-  console.log(userChoice());    
+ // console.log(userChoice());    
   
  // function choice () {
    // if (document.getElementById("rockBtn").addEventListener("click", choice))
@@ -63,7 +63,7 @@ window.addEventListener('click', (e) => {
 
       
     //return "Player has chosen" + choice
- //  }
+ //      }
 
   //function choice () {
     //if (document.getElementById("rockBtn"))
@@ -78,6 +78,10 @@ window.addEventListener('click', (e) => {
 ///  }
 
   //console.log(choice());
+
+  function click() {
+    if (onclick)
+  }
             // comp makes choice
 
 
