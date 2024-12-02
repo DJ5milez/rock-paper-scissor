@@ -2,6 +2,7 @@ const modal = document.getElementById('myModal');
 const openModal = document.getElementById('openModal');
 const closeBtns = document.querySelectorAll('.close-btn');
 
+
 // Open modal
 openModal.addEventListener('click', () => {
   modal.style.display = 'flex';
@@ -28,14 +29,32 @@ window.addEventListener('click', (e) => {
 
 
   function rock() {
-    console.log ("Rock")
+    let move = 1
+      console.log ("Rock")
   }
   function paper() {
+    let move = 2;
     console.log ("Paper")
   }
   function scissors() {
+    let move = 3;
     console.log ("Scissors")
   }
+
+  function pMove() {
+    let hand = " ";
+    if (move == 1)
+      hand = "Rock";
+    else if (move == 2)
+      hand = "Paper";
+    else if (move ==3)
+      hand = "Scissors"
+
+    return "You have chosen " + hand;
+  }
+
+  console.log(pMove())
+
   //if user select button => user chose X
  // function userChoice () {
    // if (document.getElementById("rockBtn").addEventListener("click", rock))
@@ -79,9 +98,20 @@ window.addEventListener('click', (e) => {
 
   //console.log(choice());
 
-  function click() {
-    if (onclick)
-  }
+ // function userMove() {
+  //  if (document.getElementById("rockBtn"))
+  //   move = "Rock";
+   //else if (document.getElementById("paperBtn"))
+//move = "paper";
+  // else if (document.getElementById("scissorsBtn"))
+   //   move = "Scissors";
+
+  //  return "Player has chosen " + move;
+ // }
+
+  //console.log(userMove());
+
+
             // comp makes choice
 
 
@@ -99,3 +129,20 @@ window.addEventListener('click', (e) => {
 
                 }
                 console.log(compChoice());
+
+//win
+
+function roundwin() {
+  if (hand == "Rock" && move == "Rock")
+    result = "tie";
+  else if (hand == "Rock" && move == "Paper")
+    result = "Win";
+  else if (hand == "Rock" && move == "Scissors")
+    result = "Loss";
+
+}
+
+let result = roundwin();
+console.log(result
+
+);
